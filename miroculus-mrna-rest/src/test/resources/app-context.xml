@@ -17,7 +17,7 @@
     <!-- 
     CONFIGURA EL SCOPE RESOLVER QUE SIGA JSR 330
     -->
-    <context:component-scan base-package="com.nuevebit.sat.cfdi" scope-resolver="org.springframework.context.annotation.Jsr330ScopeMetadataResolver">
+    <context:component-scan base-package="com.nuevebit.miroculus.mrna" scope-resolver="org.springframework.context.annotation.Jsr330ScopeMetadataResolver">
     </context:component-scan>
 
     <!-- ENV SPECIFIC CONFIGURATION -->
