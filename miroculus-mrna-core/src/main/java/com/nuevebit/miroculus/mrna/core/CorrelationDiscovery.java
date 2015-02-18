@@ -8,6 +8,7 @@ package com.nuevebit.miroculus.mrna.core;
 import com.nuevebit.persistence.AbstractIdentificable;
 import javax.persistence.Access;
 import javax.persistence.AccessType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -31,6 +32,9 @@ public class CorrelationDiscovery
         implements Comparable<CorrelationDiscovery> {
 
     private static final long serialVersionUID = 7083261160634786361L;
+
+    @Column(nullable = false)
+    private Integer potentialBiomarker;
 
     @ManyToOne
     @JoinColumn(name = "mirnaId", referencedColumnName = "id")
@@ -57,9 +61,14 @@ public class CorrelationDiscovery
     protected CorrelationDiscovery() {
     }
 
-    public CorrelationDiscovery(MiRNA miRNA, Disease disease) {
+    CorrelationDiscovery(Disease disease, int pb) {
+        this(null, disease, pb);
+    }
+
+    public CorrelationDiscovery(MiRNA miRNA, Disease disease, int pb) {
         this.miRNA = miRNA;
         this.disease = disease;
+        this.potentialBiomarker = pb;
     }
 
     @Id
@@ -80,6 +89,10 @@ public class CorrelationDiscovery
     @Override
     public void setId(Long id) {
         super.setId(id);
+    }
+
+    public Integer getPotentialBiomarker() {
+        return potentialBiomarker;
     }
 
     public MiRNA getMiRNA() {
@@ -109,14 +122,24 @@ public class CorrelationDiscovery
     }
 
     /**
-     * Compare based on diseases.
-     * 
+     * Compare according to potential biomarker and mortality rate, in ascending
+     * order. It gives more weight to potential biomarker than to mortality
+     * rate.
+     *
      * @param o
-     * @return 
+     * @return
      */
     @Override
     public int compareTo(CorrelationDiscovery o) {
-        return getDisease().compareTo(o.getDisease());
+        // mortality rates are in ranges [0, 100], we should transform potential
+        // biomarkers to accounts for this.
+        int val1 = o.getPotentialBiomarker() * 100 
+                + (int) Math.round(o.getDisease().getMortalityRate());
+        
+        int val2 = getPotentialBiomarker() * 100 
+                + (int) Math.round(getDisease().getMortalityRate());
+        
+        return val1 - val2;
     }
     
 }

@@ -17,19 +17,23 @@ import static org.junit.Assert.*;
  *
  * @author emerino
  */
-public class TestDisease {
+public class TestCorrelationDiscovery {
 
-    public TestDisease() {
+    public TestCorrelationDiscovery() {
     }
 
     @Test
     public void testCompareTo() {
-        Disease d1 = new Disease(0, 3.3);
-        Disease d2 = new Disease(1, 3.3d);
-        Disease d3 = new Disease(1, 2.2);
-        Disease d4 = new Disease(0, 2.1);
+        CorrelationDiscovery d1 = new CorrelationDiscovery(
+                new Disease(3.3), 0);
+        CorrelationDiscovery d2 = new CorrelationDiscovery(
+                new Disease(3.3), 1);
+        CorrelationDiscovery d3 = new CorrelationDiscovery(
+                new Disease(2.2), 1);
+        CorrelationDiscovery d4 = new CorrelationDiscovery(
+                new Disease(2.1), 0);
 
-        List<Disease> diseases = Lists.newArrayList(d1, d2, d3, d4);
+        List<CorrelationDiscovery> diseases = Lists.newArrayList(d1, d2, d3, d4);
         Collections.sort(diseases);
 
         assertTrue(diseases.get(0).equals(d2));

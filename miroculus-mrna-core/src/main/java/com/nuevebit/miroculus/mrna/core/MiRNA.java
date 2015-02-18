@@ -104,7 +104,7 @@ public class MiRNA extends AbstractIdentificable<Long> {
      * @param name
      * @return the name without an asterisk at the end.
      */
-    private String normalizeName(String name) {
+    public static String normalizeName(String name) {
         if (name.endsWith("*")) {
             name = name.substring(0, name.length() - 1);
         }

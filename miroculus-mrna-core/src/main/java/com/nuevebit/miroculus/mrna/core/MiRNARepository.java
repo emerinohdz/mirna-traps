@@ -13,4 +13,5 @@ import org.springframework.data.repository.CrudRepository;
  */
 public interface MiRNARepository extends CrudRepository<MiRNA, Long> {
 
+    MiRNA findByName(String name);
 }

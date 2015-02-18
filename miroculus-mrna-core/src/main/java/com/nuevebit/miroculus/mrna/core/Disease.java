@@ -25,17 +25,12 @@ import javax.persistence.TableGenerator;
 @Entity
 @Table(name = "Disease")
 @Access(AccessType.FIELD)
-public class Disease
-        extends AbstractIdentificable<Long>
-        implements Comparable<Disease> {
+public class Disease extends AbstractIdentificable<Long> {
 
     private static final long serialVersionUID = 3643529063898534558L;
 
     @Lob
     private String name;
-
-    @Column(nullable = false)
-    private Integer potentialBiomarker;
 
     @Column(nullable = true)
     private Double mortalityRate;
@@ -43,13 +38,12 @@ public class Disease
     protected Disease() {
     }
 
-    public Disease(int potentialBiomarker, double mortalityRate) {
-        this(null, potentialBiomarker, mortalityRate);
+    public Disease(Double mortalityRate) {
+        this(null, mortalityRate);
     }
 
-    public Disease(String name, Integer potentialBiomarker, Double mortalityRate) {
+    public Disease(String name, Double mortalityRate) {
         this.name = name;
-        this.potentialBiomarker = potentialBiomarker;
         this.mortalityRate = mortalityRate;
     }
 
@@ -73,37 +67,12 @@ public class Disease
         super.setId(id);
     }
 
-    /**
-     * Compare according to potential biomarker and mortality rate, in ascending
-     * order. It gives more weight to potential biomarker than to mortality
-     * rate.
-     *
-     * @param o
-     * @return
-     */
-    @Override
-    public int compareTo(Disease o) {
-        // mortality rates are in ranges [0, 100], we should transform potential
-        // biomarkers to accounts for this.
-        int val1 = o.getPotentialBiomarker() * 100 
-                + (int) Math.round(o.getMortalityRate());
-        
-        int val2 = getPotentialBiomarker() * 100 
-                + (int) Math.round(getMortalityRate());
-        
-        return val1 - val2;
-    }
-
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Integer getPotentialBiomarker() {
-        return potentialBiomarker;
     }
 
     public void setMortalityRate(Double mortalityRate) {
