@@ -13,6 +13,7 @@ import java.util.Set;
 import javax.persistence.Access;
 import javax.persistence.AccessType;
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -33,6 +34,7 @@ public class Author extends AbstractIdentificable<Integer> {
     private static final long serialVersionUID = -6328242816786276763L;
 
     @Lob
+    @Column(nullable = false)
     private String name;
 
     @OneToMany(
@@ -41,6 +43,13 @@ public class Author extends AbstractIdentificable<Integer> {
             mappedBy = "author"
     )
     private Set<Publication> publications;
+
+    protected Author() {
+    }
+
+    public Author(String name) {
+        this.name = name;
+    }
 
     @Id
     @GeneratedValue(

@@ -37,16 +37,20 @@ public class Disease
     @Column(nullable = false)
     private Integer potentialBiomarker;
 
+    @Column(nullable = true)
+    private Double mortalityRate;
+
     protected Disease() {
     }
 
-    Disease(int potentialBiomarker) {
-        this(null, potentialBiomarker);
+    public Disease(int potentialBiomarker, double mortalityRate) {
+        this(null, potentialBiomarker, mortalityRate);
     }
 
-    public Disease(String name, int potentialBiomarker) {
+    public Disease(String name, Integer potentialBiomarker, Double mortalityRate) {
         this.name = name;
         this.potentialBiomarker = potentialBiomarker;
+        this.mortalityRate = mortalityRate;
     }
 
     @Id
@@ -70,13 +74,24 @@ public class Disease
     }
 
     /**
-     * Compare according to potential biomarker, in ascending order.
+     * Compare according to potential biomarker and mortality rate, in ascending
+     * order. It gives more weight to potential biomarker than to mortality
+     * rate.
+     *
      * @param o
-     * @return 
+     * @return
      */
     @Override
     public int compareTo(Disease o) {
-        return o.getPotentialBiomarker().compareTo(getPotentialBiomarker());
+        // mortality rates are in ranges [0, 100], we should transform potential
+        // biomarkers to accounts for this.
+        int val1 = o.getPotentialBiomarker() * 100 
+                + (int) Math.round(o.getMortalityRate());
+        
+        int val2 = getPotentialBiomarker() * 100 
+                + (int) Math.round(getMortalityRate());
+        
+        return val1 - val2;
     }
 
     public String getName() {
@@ -89,6 +104,14 @@ public class Disease
 
     public Integer getPotentialBiomarker() {
         return potentialBiomarker;
+    }
+
+    public void setMortalityRate(Double mortalityRate) {
+        this.mortalityRate = mortalityRate;
+    }
+
+    public Double getMortalityRate() {
+        return mortalityRate;
     }
 
 }

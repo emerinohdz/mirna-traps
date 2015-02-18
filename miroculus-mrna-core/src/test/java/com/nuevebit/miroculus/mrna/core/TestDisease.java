@@ -24,18 +24,18 @@ public class TestDisease {
 
     @Test
     public void testCompareTo() {
-        Disease d1 = new Disease(1);
-        Disease d2 = new Disease(0);
-        Disease d3 = new Disease(0);
-        Disease d4 = new Disease(1);
+        Disease d1 = new Disease(0, 3.3);
+        Disease d2 = new Disease(1, 3.3d);
+        Disease d3 = new Disease(1, 2.2);
+        Disease d4 = new Disease(0, 2.1);
 
         List<Disease> diseases = Lists.newArrayList(d1, d2, d3, d4);
         Collections.sort(diseases);
 
-        assertTrue(diseases.get(0).getPotentialBiomarker() == 1);
-        assertTrue(diseases.get(1).getPotentialBiomarker() == 1);
-        assertTrue(diseases.get(2).getPotentialBiomarker() == 0);
-        assertTrue(diseases.get(3).getPotentialBiomarker() == 0);
+        assertTrue(diseases.get(0).equals(d2));
+        assertTrue(diseases.get(1).equals(d3));
+        assertTrue(diseases.get(2).equals(d1));
+        assertTrue(diseases.get(3).equals(d4));
     }
 
 }

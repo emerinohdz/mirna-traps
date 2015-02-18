@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd" >
+
+
+    <bean  name="router"  class="org.restlet.ext.spring.SpringBeanRouter"  />
+
+    <!-- CFDIs emitidos -->
+    <bean name="/consultas/{rfcContribuyente}/emitidas"  class="com.nuevebit.sat.cfdi.rest.resource.query.EmitidasResource"  scope="prototype"  autowire="byName" />
+    <bean name="/consultas/{rfcContribuyente}/emitidas/{status}"  class="com.nuevebit.sat.cfdi.rest.resource.query.EmitidasResource"  scope="prototype"  autowire="byName" />
+    <bean name="/consultas/{rfcContribuyente}/emitidas/receptor/{rfcReceptor}"  class="com.nuevebit.sat.cfdi.rest.resource.query.EmitidasResource"  scope="prototype"  autowire="byName" />
+
+    <!-- CFDIs recibidos -->
+    <bean name="/consultas/{rfcContribuyente}/recibidas"  class="com.nuevebit.sat.cfdi.rest.resource.query.RecibidasResource"  scope="prototype"  autowire="byName" />
+    <bean name="/consultas/{rfcContribuyente}/recibidas/{status}"  class="com.nuevebit.sat.cfdi.rest.resource.query.RecibidasResource"  scope="prototype"  autowire="byName" />
+    <bean name="/consultas/{rfcContribuyente}/recibidas/emisor/{rfcEmisor}"  class="com.nuevebit.sat.cfdi.rest.resource.query.RecibidasResource"  scope="prototype"  autowire="byName" />
+
+    <!-- Resultados de consultas -->
+    <bean name="/resultados/{idConsulta}/progreso"  class="com.nuevebit.sat.cfdi.rest.resource.response.ProgresoResource"  scope="prototype"  autowire="byName" />
+    <bean name="/resultados/{idConsulta}/resumen"  class="com.nuevebit.sat.cfdi.rest.resource.response.ResumenResource"  scope="prototype"  autowire="byName" />
+    <bean name="/resultados/{idConsulta}/{numPagina}"  class="com.nuevebit.sat.cfdi.rest.resource.response.PaginadosResource"  scope="prototype"  autowire="byName" />
+
+    <!-- Descarga de CFDIs -->
+    <bean name="/resultados/{idConsulta}"  class="com.nuevebit.sat.cfdi.rest.resource.response.DescargaResource"  scope="prototype"  autowire="byName" />
+
+    <bean name="/descargas/{idConsulta}/{folioCfdi}"  class="com.nuevebit.sat.cfdi.rest.resource.response.DescargaXmlResource"  scope="prototype"  autowire="byName" />
+    
+</beans>

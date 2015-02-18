@@ -17,7 +17,8 @@
     <name>Miroculus mRNA Parent</name>
     <modules>
         <module>miroculus-mrna-core</module>
-    </modules>
+    <module>miroculus-mrna-rest</module>
+  </modules>
     <dependencyManagement>
         <dependencies>
 

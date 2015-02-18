@@ -9,6 +9,7 @@ import com.nuevebit.persistence.AbstractIdentificable;
 import java.util.Objects;
 import javax.persistence.Access;
 import javax.persistence.AccessType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
@@ -36,9 +37,11 @@ public class MiRNA extends AbstractIdentificable<Long> {
         CIRCULATING
     }
 
+    @Column(nullable = false)
     private String name;
 
     @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
     private Type type;
 
     protected MiRNA() {

@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.nuevebit.miroculus.mrna.core;
+package com.nuevebit.miroculus.mrna.core.traps;
 
+import com.nuevebit.miroculus.mrna.core.MiRNA;
 import java.util.List;
 
 /**

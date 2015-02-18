@@ -31,9 +31,11 @@ public class Publication extends AbstractIdentificable<Long> {
     private static final long serialVersionUID = -5963682330976914167L;
 
     @Lob
+    @Column(nullable = false)
     private String name;
 
     @Lob
+    @Column(nullable = true)
     private String description;
     
     @ManyToOne
