@@ -71,6 +71,10 @@ public class Author extends AbstractIdentificable<Integer> {
         super.setId(id);
     }
 
+    public String getName() {
+        return name;
+    }
+
     public void addPublication(Publication publication) {
         publication.setAuthor(this);
         this.publications.add(publication);
