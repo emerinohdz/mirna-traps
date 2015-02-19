@@ -19,7 +19,6 @@ public class MiRNARestlet extends Application {
     private static final Logger LOGGER
             = LoggerFactory.getLogger(MiRNARestlet.class);
 
-    @Inject
     public MiRNARestlet() {
         
         setName("RESTful miRNA Trap Tester");
