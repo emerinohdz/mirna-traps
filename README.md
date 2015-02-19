@@ -27,7 +27,10 @@ You'll need maven to build this project, then run
 
 After building the project, install the db schema to a mysql database and
 make a JNDI resource (datasource) available in your favorite Application Server 
-with the name "jdbc/mirna", pointing to the created db.
+with the name "jdbc/mirna", pointing to the created db. Also, you'll need
+to make a Properties object available through JNDI under the name
+"resource/mirna_config", containing a single property: 
+"eclipselink.databasePlatform=org.eclipse.persistence.platform.database.MySQLPlatform"
 
 You'll need to add the following system property to the jvm instance that runs
 your app server for the production configuration to take place:
