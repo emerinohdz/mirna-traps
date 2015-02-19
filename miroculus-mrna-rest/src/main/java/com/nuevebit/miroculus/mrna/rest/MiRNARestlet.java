@@ -5,6 +5,9 @@
  */
 package com.nuevebit.miroculus.mrna.rest;
 
+import com.nuevebit.miroculus.mrna.cli.DatabasePopulator;
+import com.nuevebit.miroculus.mrna.core.MiRNARepository;
+import java.io.IOException;
 import javax.inject.Inject;
 import org.restlet.Application;
 import org.slf4j.Logger;
@@ -19,7 +22,10 @@ public class MiRNARestlet extends Application {
     private static final Logger LOGGER
             = LoggerFactory.getLogger(MiRNARestlet.class);
 
-    public MiRNARestlet() {
+    @Inject
+    public MiRNARestlet(
+            MiRNARepository miRNARepository,
+            DatabasePopulator databasePopulator) throws IOException {
         
         setName("RESTful miRNA Trap Tester");
         setDescription("miRNA trap tester");
@@ -29,6 +35,10 @@ public class MiRNARestlet extends Application {
 
         getStatusService().setContactEmail("emerino@nuevebit.com");
 
+        // first time deploy, load db
+        if (miRNARepository.count() == 0) {
+            databasePopulator.populate();
+        }
     }
 
 }

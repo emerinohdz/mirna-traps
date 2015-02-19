@@ -4,7 +4,7 @@
     <parent>
         <artifactId>miroculus-mrna</artifactId>
         <groupId>com.nuevebit.miroculus</groupId>
-        <version>0.1</version>
+        <version>0.2</version>
     </parent>
 
     <groupId>com.nuevebit.miroculus</groupId>
@@ -112,6 +112,14 @@
         <dependency>
             <groupId>com.nuevebit.miroculus.mrna</groupId>
             <artifactId>miroculus-mrna-core</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <!-- TODO: this should be on a different artifact, where persistence
+        specific code and configurations reside -->
+        <dependency>
+            <groupId>com.nuevebit.miroculus</groupId>
+            <artifactId>miroculus-mrna-cli</artifactId>
             <version>${project.version}</version>
         </dependency>
 
