@@ -1,7 +1,7 @@
 # MicroRNA trap finder
 
 This project was developed to content for the Senior Architect position at 
-miroculus. Built using the Java 6 platform, JPA for persistence, Spring
+miroculus. Built using the Java EE 6 platform, JPA for persistence, Spring
 Framework, Restlet Framework for the REST webservice.
 
 The obtained mortality rates I could find are listed in the file:
@@ -39,4 +39,4 @@ your app server for the production configuration to take place:
     
 Once the app server is configured, deploy the war found under:
     
-    miroculus-mrna-rest/target/miroculus-mrna-rest-0.1.war
+    miroculus-mrna-rest/target/miroculus-mrna-rest-0.2.2.war
