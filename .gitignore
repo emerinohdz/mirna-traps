@@ -2,3 +2,9 @@
 
 # jetty environment config no debe incluirse, sólo se incluye un template para que el desarrollador lo modifique de acuerdo a sus necesidades
 jetty-env.xml
+
+# flyway credentials
+**/flyway.properties
+
+# dev credentials
+**/spring/app-context-dev.xml

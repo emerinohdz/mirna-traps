@@ -39,4 +39,4 @@ your app server for the production configuration to take place:
     
 Once the app server is configured, deploy the war found under:
     
-    miroculus-mrna-rest/target/miroculus-mrna-rest-0.2.2.war
+    miroculus-mrna-rest/target/miroculus-mrna-rest-0.2.3.war
