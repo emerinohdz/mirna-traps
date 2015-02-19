@@ -4,7 +4,7 @@
     <parent>
         <artifactId>miroculus-mrna</artifactId>
         <groupId>com.nuevebit.miroculus</groupId>
-        <version>0.3-SNAPSHOT</version>
+        <version>0.2.1</version>
     </parent>
 
     <groupId>com.nuevebit.miroculus</groupId>
