@@ -6,5 +6,3 @@ jetty-env.xml
 # flyway credentials
 **/flyway.properties
 
-# dev credentials
-**/spring/app-context-dev.xml
