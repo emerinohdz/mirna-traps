@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd" >
+
+
+    <bean  name="router"  class="org.restlet.ext.spring.SpringBeanRouter"  />
+
+    <!-- miRNA db queries -->
+    <bean name="/discoveries"  class="com.nuevebit.miroculus.mrna.rest.resource.CorrelationDiscoveryResource"  scope="prototype"  autowire="byName" />
+
+    <bean name="/micro_rnas"  class="com.nuevebit.miroculus.mrna.rest.resource.MiRNAResource"  scope="prototype"  autowire="byName" />
+
+    <bean name="/diseases"  class="com.nuevebit.miroculus.mrna.rest.resource.DiseaseResource"  scope="prototype"  autowire="byName" />
+
+    <bean name="/publications"  class="com.nuevebit.miroculus.mrna.rest.resource.PublicationResource"  scope="prototype"  autowire="byName" />
+
+    <bean name="/publication_authors"  class="com.nuevebit.miroculus.mrna.rest.resource.AuthorResource"  scope="prototype"  autowire="byName" />
+
+    <bean name="/traps"  class="com.nuevebit.miroculus.mrna.rest.resource.TrapResource"  scope="prototype"  autowire="byName" />
+    
+</beans>

@@ -9,6 +9,7 @@ import com.nuevebit.persistence.AbstractIdentificable;
 import java.util.Objects;
 import javax.persistence.Access;
 import javax.persistence.AccessType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
@@ -36,9 +37,11 @@ public class MiRNA extends AbstractIdentificable<Long> {
         CIRCULATING
     }
 
+    @Column(nullable = false)
     private String name;
 
     @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
     private Type type;
 
     protected MiRNA() {
@@ -101,12 +104,12 @@ public class MiRNA extends AbstractIdentificable<Long> {
      * @param name
      * @return the name without an asterisk at the end.
      */
-    private String normalizeName(String name) {
+    public static String normalizeName(String name) {
         if (name.endsWith("*")) {
             name = name.substring(0, name.length() - 1);
         }
 
-        return name;
+        return name.trim();
     }
 
     public String getName() {

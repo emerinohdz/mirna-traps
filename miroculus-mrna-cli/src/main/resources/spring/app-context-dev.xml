@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans profile="default"
+       xmlns="http://www.springframework.org/schema/beans"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+                           http://www.springframework.org/schema/jee
+                           http://www.springframework.org/schema/jee/spring-jee-2.5.xsd">
+
+    <!-- CONFIGURATION PROPERTIES -->
+    <bean id="config-properties" class="org.springframework.beans.factory.config.PropertiesFactoryBean" >
+        <property name="properties">
+            <props>
+                <prop key="eclipselink.databasePlatform">org.eclipse.persistence.platform.database.MySQLPlatform</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!-- DATA SOURCE -->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql://localhost:3306/mirna" />
+        <property name="username" value="root" />
+        <property name="password" value="e18barney" />
+    </bean>
+
+    <!--
+    <jee:jndi-lookup id="dataSource" jndi-name="jdbc/cfdi_tools" resource-ref="true" />
+    -->
+
+</beans>

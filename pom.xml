@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>com.nuevebit.obcrm</groupId>
-        <artifactId>obcrm-pom</artifactId>
-        <version>0.1-SNAPSHOT</version>
-    </parent>
     <groupId>com.nuevebit.miroculus</groupId>
     <artifactId>miroculus-mrna</artifactId>
+    <version>0.1</version>
     <packaging>pom</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -17,6 +13,8 @@
     <name>Miroculus mRNA Parent</name>
     <modules>
         <module>miroculus-mrna-core</module>
+    <module>miroculus-mrna-rest</module>
+        <module>miroculus-mrna-cli</module>
     </modules>
     <dependencyManagement>
         <dependencies>

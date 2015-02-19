@@ -25,28 +25,30 @@ import javax.persistence.TableGenerator;
 @Entity
 @Table(name = "Disease")
 @Access(AccessType.FIELD)
-public class Disease
-        extends AbstractIdentificable<Long>
-        implements Comparable<Disease> {
+public class Disease extends AbstractIdentificable<Long> {
 
     private static final long serialVersionUID = 3643529063898534558L;
 
     @Lob
     private String name;
 
-    @Column(nullable = false)
-    private Integer potentialBiomarker;
+    @Column(nullable = true)
+    private Double mortalityRate;
 
     protected Disease() {
     }
 
-    Disease(int potentialBiomarker) {
-        this(null, potentialBiomarker);
+    public Disease(Double mortalityRate) {
+        this(null, mortalityRate);
     }
 
-    public Disease(String name, int potentialBiomarker) {
+    public Disease(String name) {
+        this(name, null);
+    }
+
+    public Disease(String name, Double mortalityRate) {
         this.name = name;
-        this.potentialBiomarker = potentialBiomarker;
+        this.mortalityRate = mortalityRate;
     }
 
     @Id
@@ -69,16 +71,6 @@ public class Disease
         super.setId(id);
     }
 
-    /**
-     * Compare according to potential biomarker, in ascending order.
-     * @param o
-     * @return 
-     */
-    @Override
-    public int compareTo(Disease o) {
-        return o.getPotentialBiomarker().compareTo(getPotentialBiomarker());
-    }
-
     public String getName() {
         return name;
     }
@@ -87,8 +79,12 @@ public class Disease
         this.name = name;
     }
 
-    public Integer getPotentialBiomarker() {
-        return potentialBiomarker;
+    public void setMortalityRate(Double mortalityRate) {
+        this.mortalityRate = mortalityRate;
+    }
+
+    public Double getMortalityRate() {
+        return mortalityRate;
     }
 
 }

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.nuevebit.miroculus.mrna.core;
+package com.nuevebit.miroculus.mrna.core.traps;
 
 import java.util.List;
 
@@ -19,5 +19,5 @@ public interface MiRNAService {
      * 
      * @return a list of 94 MiRNA suited for the test.
      */
-    List<MiRNA> findTraps();
+    List<String> findTraps();
 }

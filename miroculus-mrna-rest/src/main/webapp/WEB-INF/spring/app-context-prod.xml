@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans profile="production"
+       xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+                           http://www.springframework.org/schema/jee
+                           http://www.springframework.org/schema/jee/spring-jee-2.5.xsd">
+
+    <!-- DATA SOURCE -->
+    <jee:jndi-lookup id="dataSource" jndi-name="jdbc/mirna" resource-ref="true" />
+
+    <!-- CONFIGURATION PROPERTIES -->
+    <jee:jndi-lookup id="config-properties" jndi-name="resource/mirna_config" resource-ref="true"/>
+
+</beans>

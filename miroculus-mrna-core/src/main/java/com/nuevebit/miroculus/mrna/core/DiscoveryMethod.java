@@ -8,6 +8,7 @@ package com.nuevebit.miroculus.mrna.core;
 import com.nuevebit.persistence.AbstractIdentificable;
 import javax.persistence.Access;
 import javax.persistence.AccessType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -21,12 +22,20 @@ import javax.persistence.TableGenerator;
  * @author emerino
  */
 @Entity
-@Table
+@Table(name = "DiscoveryMethod")
 @Access(AccessType.FIELD)
 public class DiscoveryMethod extends AbstractIdentificable<Integer> {
 
     @Lob
+    @Column(nullable = false)
     private String name;
+
+    protected DiscoveryMethod() {
+    }
+
+    public DiscoveryMethod(String name) {
+        this.name = name;
+    }
     
     @Id
     @GeneratedValue(
@@ -47,4 +56,9 @@ public class DiscoveryMethod extends AbstractIdentificable<Integer> {
     public void setId(Integer id) {
         super.setId(id); 
     }
+
+    public String getName() {
+        return name;
+    }
+    
 }
