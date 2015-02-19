@@ -14,7 +14,7 @@
     <modules>
         <module>miroculus-mrna-core</module>
     <module>miroculus-mrna-rest</module>
-        <module>miraculus-mrna-cli</module>
+        <module>miroculus-mrna-cli</module>
     </modules>
     <dependencyManagement>
         <dependencies>
