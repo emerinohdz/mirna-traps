@@ -15,4 +15,5 @@ import org.springframework.data.repository.CrudRepository;
 public interface DiscoveryMethodRepository
         extends CrudRepository<DiscoveryMethod, Integer> {
     
+    DiscoveryMethod findByName(String name);
 }

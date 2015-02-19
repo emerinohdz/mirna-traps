@@ -5,7 +5,6 @@
  */
 package com.nuevebit.miroculus.mrna.core.traps;
 
-import com.nuevebit.miroculus.mrna.core.MiRNA;
 import java.util.List;
 
 /**
@@ -20,5 +19,5 @@ public interface MiRNAService {
      * 
      * @return a list of 94 MiRNA suited for the test.
      */
-    List<MiRNA> findTraps();
+    List<String> findTraps();
 }

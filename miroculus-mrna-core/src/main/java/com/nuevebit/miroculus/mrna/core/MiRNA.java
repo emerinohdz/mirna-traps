@@ -109,7 +109,7 @@ public class MiRNA extends AbstractIdentificable<Long> {
             name = name.substring(0, name.length() - 1);
         }
 
-        return name;
+        return name.trim();
     }
 
     public String getName() {

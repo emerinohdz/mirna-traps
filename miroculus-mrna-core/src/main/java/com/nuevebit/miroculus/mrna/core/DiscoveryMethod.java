@@ -22,7 +22,7 @@ import javax.persistence.TableGenerator;
  * @author emerino
  */
 @Entity
-@Table
+@Table(name = "DiscoveryMethod")
 @Access(AccessType.FIELD)
 public class DiscoveryMethod extends AbstractIdentificable<Integer> {
 

@@ -49,6 +49,14 @@ public class Publication extends AbstractIdentificable<Long> {
     @Column(nullable = false)
     private Integer year;
 
+    protected Publication() {
+    }
+
+    public Publication(String name, String journal) {
+        this.name = name;
+        this.journal = journal;
+    }
+
     @Id
     @GeneratedValue(
             strategy = GenerationType.TABLE,

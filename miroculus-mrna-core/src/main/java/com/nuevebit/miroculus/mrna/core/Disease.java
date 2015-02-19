@@ -42,6 +42,10 @@ public class Disease extends AbstractIdentificable<Long> {
         this(null, mortalityRate);
     }
 
+    public Disease(String name) {
+        this(name, null);
+    }
+
     public Disease(String name, Double mortalityRate) {
         this.name = name;
         this.mortalityRate = mortalityRate;
