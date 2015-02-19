@@ -44,12 +44,12 @@
                 ids, de lo contrario, si se encuentra muy cargado el sistema,
                 pueden ocasionarse deadlocks en la base de datos.
                 -->
-                <prop key="eclipselink.jdbc.sequence-connection-pool">true</prop>
-                <prop key="eclipselink.jdbc.sequence-connection-pool.non-jta-data-source">jdbc/sequence_generator</prop>
-                <prop key="eclipselink.persistence-context.flush-mode">commit</prop>
                 <!--  Optimization #9 - statement caching -->
                 <!--  Optimization #10 - batch writing -->
                 <!--
+                <prop key="eclipselink.jdbc.sequence-connection-pool">true</prop>
+                <prop key="eclipselink.jdbc.sequence-connection-pool.non-jta-data-source">jdbc/sequence_generator</prop>
+                <prop key="eclipselink.persistence-context.flush-mode">commit</prop>
                 <prop key="eclipselink.jdbc.cache-statements">true</prop>
                 <prop key="eclipselink.jdbc.batch-writing">JDBC</prop>
                 <prop key="eclipselink.jdbc.batch-writing.size">500</prop>

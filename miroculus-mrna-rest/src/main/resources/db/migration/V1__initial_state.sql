@@ -19,7 +19,6 @@ create table Disease (
     version bigint(20) not null,
     id bigint(20) not null,
     name text not null,
-    potentialBiomarker tinyint(1) not null,
     mortalityRate float not null,
 
     primary key (id)
@@ -51,6 +50,7 @@ create table Publication (
 create table CorrelationDiscovery (
     version bigint(20) not null,
     id bigint(20) not null,
+    potentialBiomarker tinyint(1) not null,
     mirnaId bigint(20) not null,
     diseaseId bigint(20) not null,
     methodId int(11) not null,

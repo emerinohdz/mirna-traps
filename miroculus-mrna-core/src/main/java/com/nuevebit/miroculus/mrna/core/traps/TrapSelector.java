@@ -42,7 +42,6 @@ public class TrapSelector {
         Set<String> traps = Sets.newHashSet();
         for (CorrelationDiscovery discovery : sorted) {
             if (traps.size() < limit) {
-                System.out.println(discovery.getPotentialBiomarker());
                 traps.add(discovery.getMiRNA().getShortName());
             } else {
                 break;

@@ -1,0 +1,1222 @@
+{
+    "name": "Causes",
+    "children": [
+        {
+            "name": "mujer",
+            "children": [
+                {
+                    "name": "Cirrhosis",
+                    "children": [
+                        {
+                            "name": "Other cirrhosis of the liver",
+                            "size": 19.65,
+                            "color": "#d2a1bd",
+                            "val": 0.82
+                        },
+                        {
+                            "name": "Cirrhosis of the liver secondary to hepatitis B",
+                            "size": 36.38,
+                            "color": "#d2a1bd",
+                            "val": 0.82
+                        },
+                        {
+                            "name": "Cirrhosis of the liver secondary to hepatitis C",
+                            "size": 43.96,
+                            "color": "#d2a1bd",
+                            "val": 0.82
+                        }
+
+                    ],
+                    "size": 1.64,
+                    "color": "#7e064b",
+                    "val": 50
+                },
+                {
+                    "name": "Tuberculosis",
+                    "size": 2.38,
+                    "color": "#7e064b",
+                    "val": 50
+                },
+                {
+                    "name": "HIV and AIDS",
+                    "size": 3.70,
+                    "color": "#7e064b",
+                    "val": 50
+                },
+                {
+                    "name": "Cardio diseases",
+                    "children": [
+                        {
+                            "name": "Cardiomyopathy and myocarditis",
+                            "size": 3.57,
+                            "color": "#d2a1bd",
+                            "val": 12.8
+                        },
+                        {
+                            "name": "Hypertensive heart disease",
+                            "size": 10.66,
+                            "color": "#d2a1bd",
+                            "val": 12.8
+                        },
+                        {
+                            "name": "Ischemic heart disease",
+                            "size": 73.05,
+                            "color": "#d2a1bd",
+                            "val": 12.8
+                        },
+                        {
+                            "name": "Other cardiovascular and circulatory diseases",
+                            "size": 7.78,
+                            "color": "#d2a1bd",
+                            "val": 12.8
+                        },
+                        {
+                            "name": "Rheumatic heart disease",
+                            "size": 4.25,
+                            "color": "#d2a1bd",
+                            "val": 12.8
+                        }
+
+                    ],
+                    "size": 25.60,
+                    "color": "#7e064b",
+                    "val": 50
+                },
+                {
+                    "name": "Neuro disorders",
+                    "children": [
+                        {
+                            "name": "Alcohol use disorders",
+                            "size": 0.85,
+                            "color": "#d2a1bd",
+                            "val": 6.87
+                        },
+                        {
+                            "name": "Alzheimer's disease and other dementias",
+                            "size": 13,
+                            "color": "#d2a1bd",
+                            "val": 6.87
+                        },
+                        {
+                            "name": "Cocaine and drug use",
+                            "size": 2.45,
+                            "color": "#d2a1bd",
+                            "val": 6.87
+                        },
+                        {
+                            "name": "Eating disorders",
+                            "size": 0.18,
+                            "color": "#d2a1bd",
+                            "val": 6.87
+                        },
+                        {
+                            "name": "Epilepsy",
+                            "size": 3.25,
+                            "color": "#d2a1bd",
+                            "val": 6.87
+                        },
+                        {
+                            "name": "Ischemic stroke",
+                            "size": 65.36,
+                            "color": "#d2a1bd",
+                            "val": 6.87
+                        },
+                        {
+                            "name": "Neural tube defects",
+                            "size": 1.38,
+                            "color": "#d2a1bd",
+                            "val": 6.87
+                        },
+                        {
+                            "name": "Other mental and behavioral disorders",
+                            "size": 0.29,
+                            "color": "#d2a1bd",
+                            "val": 6.87
+                        },
+                        {
+                            "name": "Other neurological disorders",
+                            "size": 10.78,
+                            "color": "#d2a1bd",
+                            "val": 6.87
+                        },
+                        {
+                            "name": "Parkinson's disease",
+                            "size": 2.09,
+                            "color": "#d2a1bd",
+                            "val": 6.87
+                        },
+                        {
+                            "name": "Schizophrenia",
+                            "size": 0.36,
+                            "color": "#d2a1bd",
+                            "val": 6.87
+                        }
+
+
+                    ],
+                    "size": 13.74,
+                    "color": "#7e064b",
+                    "val": 50
+                },
+                {
+                    "name": "Respiratory diseases",
+                    "children": [
+                        {
+                            "name": "Chronic obstructive pulmonary disease",
+                            "size": 50.70,
+                            "color": "#d2a1bd",
+                            "val": 6.97
+                        },
+                        {
+                            "name": "H influenzae type B pneumonia",
+                            "size": 7.07,
+                            "color": "#d2a1bd",
+                            "val": 6.97
+                        },
+                        {
+                            "name": "Influenza",
+                            "size": 9.96,
+                            "color": "#d2a1bd",
+                            "val": 6.97
+                        },
+                        {
+                            "name": "Other chronic respiratory diseases",
+                            "size": 5.32,
+                            "color": "#d2a1bd",
+                            "val": 6.97
+                        },
+                        {
+                            "name": "Pneumococcal meningitis",
+                            "size": 2.16,
+                            "color": "#d2a1bd",
+                            "val": 6.97
+                        },
+                        {
+                            "name": "Pneumococcal pneumonia",
+                            "size": 18.34,
+                            "color": "#d2a1bd",
+                            "val": 6.97
+                        },
+                        {
+                            "name": "Pneumoconiosis",
+                            "size": 1.55,
+                            "color": "#d2a1bd",
+                            "val": 6.97
+                        },
+                        {
+                            "name": "Respiratory syncytial virus pneumonia",
+                            "size": 4.90,
+                            "color": "#d2a1bd",
+                            "val": 6.97
+                        }
+
+                    ],
+                    "size": 13.94,
+                    "color": "#7e064b",
+                    "val": 50
+                },
+                {
+                    "name": "NTD and malaria",
+                    "children": [
+                        {
+                            "name": "Chagas disease",
+                            "size": 0.58,
+                            "color": "#d2a1bd",
+                            "val": 1.65
+                        },
+                        {
+                            "name": "Cysticercosis",
+                            "size": 0.10,
+                            "color": "#d2a1bd",
+                            "val": 1.65
+                        },
+                        {
+                            "name": "Dengue",
+                            "size": 1.31,
+                            "color": "#d2a1bd",
+                            "val": 1.65
+                        },
+                        {
+                            "name": "Echinococcosis",
+                            "size": 0.11,
+                            "color": "#d2a1bd",
+                            "val": 1.65
+                        },
+                        {
+                            "name": "Leishmaniasis",
+                            "size": 2.69,
+                            "color": "#d2a1bd",
+                            "val": 1.65
+                        },
+                        {
+                            "name": "Malaria",
+                            "size": 91.44,
+                            "color": "#d2a1bd",
+                            "val": 1.65
+                        },
+                        {
+                            "name": "Rabies",
+                            "size": 1.93,
+                            "color": "#d2a1bd",
+                            "val": 1.65
+                        },
+                        {
+                            "name": "Schistosomiasis",
+                            "size": 1.12,
+                            "color": "#d2a1bd",
+                            "val": 1.65
+                        },
+                        {
+                            "name": "African trypanosomiasis",
+                            "size": 0.71,
+                            "color": "#d2a1bd",
+                            "val": 1.65
+                        }
+
+                    ],
+                    "size": 3.31,
+                    "color": "#7e064b",
+                    "val": 50
+                },
+                {
+                    "name": "Diabetes",
+                    "children": [
+                        {
+                            "name": "Diabetes mellitus",
+                            "size": 88.21,
+                            "color": "#d2a1bd",
+                            "val": 2.22
+                        },
+                        {
+                            "name": "Chronic kidney disease",
+                            "size": 11.79,
+                            "color": "#d2a1bd",
+                            "val": 2.22
+                        }
+
+                    ],
+                    "size": 4.43,
+                    "color": "#7e064b",
+                    "val": 50
+                },
+                {
+                    "name": "Diarrhea and other infectious",
+                    "children": [
+                        {
+                            "name": "Cholera",
+                            "size": 2.41,
+                            "color": "#d2a1bd",
+                            "val": 3.26
+                        },
+                        {
+                            "name": "Diphtheria",
+                            "size": 0.12,
+                            "color": "#d2a1bd",
+                            "val": 3.26
+                        },
+                        {
+                            "name": "Encephalitis",
+                            "size": 4.67,
+                            "color": "#d2a1bd",
+                            "val": 3.26
+                        },
+                        {
+                            "name": "Meningitis",
+                            "size": 3.31,
+                            "color": "#d2a1bd",
+                            "val": 3.26
+                        },
+                        {
+                            "name": "Measles",
+                            "size": 5.24,
+                            "color": "#d2a1bd",
+                            "val": 3.26
+                        },
+                        {
+                            "name": "Other diarrheal diseases",
+                            "size": 20.33,
+                            "color": "#d2a1bd",
+                            "val": 3.26
+                        },
+                        {
+                            "name": "Other infectious diseases",
+                            "size": 11.02,
+                            "color": "#d2a1bd",
+                            "val": 3.26
+                        },
+                        {
+                            "name": "Lower respiratory infections",
+                            "size": 30.17,
+                            "color": "#d2a1bd",
+                            "val": 3.26
+                        },
+                        {
+                            "name": "Other meningitis",
+                            "size": 5.76,
+                            "color": "#d2a1bd",
+                            "val": 3.26
+                        },
+                        {
+                            "name": "Otitis media",
+                            "size": 0.15,
+                            "color": "#d2a1bd",
+                            "val": 3.26
+                        },
+                        {
+                            "name": "Other salmonella infections",
+                            "size": 3.50,
+                            "color": "#d2a1bd",
+                            "val": 3.26
+                        },
+                        {
+                            "name": "Tetanus",
+                            "size": 2.49,
+                            "color": "#d2a1bd",
+                            "val": 3.26
+                        },
+                        {
+                            "name": "Typhoid and paratyphoid fevers",
+                            "size": 7.01,
+                            "color": "#d2a1bd",
+                            "val": 3.26
+                        },
+                        {
+                            "name": "Upper respiratory infections",
+                            "size": 0.12,
+                            "color": "#d2a1bd",
+                            "val": 3.26
+                        },
+                        {
+                            "name": "Varicella",
+                            "size": 0.30,
+                            "color": "#d2a1bd",
+                            "val": 3.26
+                        },
+                        {
+                            "name": "Whooping cough",
+                            "size": 3.41,
+                            "color": "#d2a1bd",
+                            "val": 3.26
+                        }
+
+
+                    ],
+                    "size": 6.52,
+                    "color": "#7e064b",
+                    "val": 50
+                },
+                {
+                    "name": "Neonatal disorders",
+                    "children": [
+                        {
+                            "name": "Birth asphyxia and trauma",
+                            "size": 22.04,
+                            "color": "#d2a1bd",
+                            "val": 2.66
+                        },
+                        {
+                            "name": "Sepsis and other infectious",
+                            "size": 22.94,
+                            "color": "#d2a1bd",
+                            "val": 2.66
+                        },
+                        {
+                            "name": "Other disorders",
+                            "size": 15.77,
+                            "color": "#d2a1bd",
+                            "val": 2.66
+                        },
+                        {
+                            "name": "Preterm birth complications",
+                            "size": 39.25,
+                            "color": "#d2a1bd",
+                            "val": 2.66
+                        }
+
+                    ],
+                    "size": 5.32,
+                    "color": "#7e064b",
+                    "val": 50
+                },
+                {
+                    "name": "Cancer",
+                    "children": [
+                        {
+                            "name": "Hodgkin's disease",
+                            "size": 0.22,
+                            "color": "#d2a1bd",
+                            "val": 9.71
+                        },
+                        {
+                            "name": "Bladder",
+                            "size": 1.32,
+                            "color": "#d2a1bd",
+                            "val": 9.71
+                        },
+                        {
+                            "name": "Brain and nervous system",
+                            "size": 2.54,
+                            "color": "#d2a1bd",
+                            "val": 9.71
+                        },
+                        {
+                            "name": "Breast",
+                            "size": 12.83,
+                            "color": "#d2a1bd",
+                            "val": 9.71
+                        },
+                        {
+                            "name": "Cervical",
+                            "size": 6.59,
+                            "color": "#d2a1bd",
+                            "val": 9.71
+                        },
+                        {
+                            "name": "Colon and rectum",
+                            "size": 9.94,
+                            "color": "#d2a1bd",
+                            "val": 9.71
+                        },
+                        {
+                            "name": "Esophageal",
+                            "size": 3.30,
+                            "color": "#d2a1bd",
+                            "val": 9.71
+                        },
+                        {
+                            "name": "Gallbladder and biliary tract",
+                            "size": 2.60,
+                            "color": "#d2a1bd",
+                            "val": 9.71
+                        },
+                        {
+                            "name": "Kidney and other urinary organ",
+                            "size": 1.78,
+                            "color": "#d2a1bd",
+                            "val": 9.71
+                        },
+                        {
+                            "name": "Larynx",
+                            "size": 0.38,
+                            "color": "#d2a1bd",
+                            "val": 9.71
+                        },
+                        {
+                            "name": "Leukemia",
+                            "size": 3.53,
+                            "color": "#d2a1bd",
+                            "val": 9.71
+                        },
+                        {
+                            "name": "Liver",
+                            "size": 6.78,
+                            "color": "#d2a1bd",
+                            "val": 9.71
+                        },
+                        {
+                            "name": "Trachea, bronchus, and lung",
+                            "size": 13.36,
+                            "color": "#d2a1bd",
+                            "val": 9.71
+                        },
+                        {
+                            "name": "Melanoma",
+                            "size": 0.61,
+                            "color": "#d2a1bd",
+                            "val": 9.71
+                        },
+                        {
+                            "name": "Mouth",
+                            "size": 1.31,
+                            "color": "#d2a1bd",
+                            "val": 9.71
+                        },
+                        {
+                            "name": "Multiple myeloma",
+                            "size": 0.98,
+                            "color": "#d2a1bd",
+                            "val": 9.71
+                        },
+                        {
+                            "name": "Nasopharynx",
+                            "size": 0.56,
+                            "color": "#d2a1bd",
+                            "val": 9.71
+                        },
+                        {
+                            "name": "Non-Hodgkin lymphoma",
+                            "size": 2.56,
+                            "color": "#d2a1bd",
+                            "val": 9.71
+                        },
+                        {
+                            "name": "Non-melanoma skin",
+                            "size": 0.39,
+                            "color": "#d2a1bd",
+                            "val": 9.71
+                        },
+                        {
+                            "name": "Other neoplasms",
+                            "size": 8.24,
+                            "color": "#d2a1bd",
+                            "val": 9.71
+                        },
+                        {
+                            "name": "Pharynx and oropharynx",
+                            "size": 0.75,
+                            "color": "#d2a1bd",
+                            "val": 9.71
+                        },
+                        {
+                            "name": "Ovarian",
+                            "size": 4.69,
+                            "color": "#d2a1bd",
+                            "val": 9.71
+                        },
+                        {
+                            "name": "Pancreatic",
+                            "size": 4.19,
+                            "color": "#d2a1bd",
+                            "val": 9.71
+                        },
+                        {
+                            "name": "Stomach",
+                            "size": 8.16,
+                            "color": "#d2a1bd",
+                            "val": 9.71
+                        },
+                        {
+                            "name": "Thyroid",
+                            "size": 0.65,
+                            "color": "#d2a1bd",
+                            "val": 9.71
+                        },
+                        {
+                            "name": "Uterine",
+                            "size": 1.71,
+                            "color": "#d2a1bd",
+                            "val": 9.71
+                        }
+
+
+
+                    ],
+                    "size": 19.42,
+                    "color": "#7e064b",
+                    "val": 50
+                }
+
+
+
+            ],
+            "size": 100,
+            "val": 50
+        },
+        {
+            "name": "hombre",
+            "children": [
+                {
+                    "name": "Cancer",
+                    "children": [
+                        {
+                            "name": "Hodgkin's disease",
+                            "size": 0.22,
+                            "color": "#5ea7bd",
+                            "val": 10.82
+                        },
+                        {
+                            "name": "Bladder",
+                            "size": 2.76,
+                            "color": "#5ea7bd",
+                            "val": 10.82
+                        },
+                        {
+                            "name": "Brain and nervous system",
+                            "size": 2.38,
+                            "color": "#5ea7bd",
+                            "val": 10.82
+                        },
+                        {
+                            "name": "Cervical",
+                            "size": 6.59,
+                            "color": "#5ea7bd",
+                            "val": 10.82
+                        },
+                        {
+                            "name": "Colon and rectum",
+                            "size": 8.22,
+                            "color": "#5ea7bd",
+                            "val": 10.82
+                        },
+                        {
+                            "name": "Esophageal",
+                            "size": 6.19,
+                            "color": "#5ea7bd",
+                            "val": 10.82
+                        },
+                        {
+                            "name": "Gallbladder and biliary tract",
+                            "size": 1.38,
+                            "color": "#5ea7bd",
+                            "val": 10.82
+                        },
+                        {
+                            "name": "Kidney and other urinary organ",
+                            "size": 2.22,
+                            "color": "#5ea7bd",
+                            "val": 10.82
+                        },
+                        {
+                            "name": "Larynx",
+                            "size": 1.87,
+                            "color": "#5ea7bd",
+                            "val": 10.82
+                        },
+                        {
+                            "name": "Leukemia",
+                            "size": 3.52,
+                            "color": "#5ea7bd",
+                            "val": 10.82
+                        },
+                        {
+                            "name": "Liver",
+                            "size": 11.41,
+                            "color": "#5ea7bd",
+                            "val": 10.82
+                        },
+                        {
+                            "name": "Trachea, bronchus, and lung",
+                            "size": 23.48,
+                            "color": "#5ea7bd",
+                            "val": 10.82
+                        },
+                        {
+                            "name": "Melanoma",
+                            "size": 0.62,
+                            "color": "#5ea7bd",
+                            "val": 10.82
+                        },
+                        {
+                            "name": "Mouth",
+                            "size": 1.73,
+                            "color": "#5ea7bd",
+                            "val": 10.82
+                        },
+                        {
+                            "name": "Multiple myeloma",
+                            "size": 0.89,
+                            "color": "#5ea7bd",
+                            "val": 10.82
+                        },
+                        {
+                            "name": "Nasopharynx",
+                            "size": 1.0,
+                            "color": "#5ea7bd",
+                            "val": 10.82
+                        },
+                        {
+                            "name": "Non-Hodgkin lymphoma",
+                            "size": 2.68,
+                            "color": "#5ea7bd",
+                            "val": 10.82
+                        },
+                        {
+                            "name": "Non-melanoma skin",
+                            "size": 0.38,
+                            "color": "#5ea7bd",
+                            "val": 10.82
+                        },
+                        {
+                            "name": "Other neoplasms",
+                            "size": 7.17,
+                            "color": "#5ea7bd",
+                            "val": 10.82
+                        },
+                        {
+                            "name": "Pharynx and oropharynx",
+                            "size": 1.69,
+                            "color": "#5ea7bd",
+                            "val": 10.82
+                        },
+                        {
+                            "name": "Testicular",
+                            "size": 0.17,
+                            "color": "#5ea7bd",
+                            "val": 10.82
+                        },
+                        {
+                            "name": "Pancreatic",
+                            "size": 3.66,
+                            "color": "#5ea7bd",
+                            "val": 10.82
+                        },
+                        {
+                            "name": "Stomach",
+                            "size": 10.44,
+                            "color": "#5ea7bd",
+                            "val": 10.82
+                        },
+                        {
+                            "name": "Thyroid",
+                            "size": 0.30,
+                            "color": "#5ea7bd",
+                            "val": 10.82
+                        }
+
+
+
+                    ],
+                    "size": 21.95,
+                    "color": "#064e64",
+                    "val": 50
+                },
+                {
+                    "name": "Cirrhosis",
+                    "children": [
+                        {
+                            "name": "Other cirrhosis of the liver",
+                            "size": 19.91,
+                            "color": "#5ea7bd",
+                            "val": 1.1
+                        },
+                        {
+                            "name": "Cirrhosis of the liver secondary to hepatitis B",
+                            "size": 45.15,
+                            "color": "#5ea7bd",
+                            "val": 1.1
+                        },
+                        {
+                            "name": "Cirrhosis of the liver secondary to hepatitis C",
+                            "size": 34.94,
+                            "color": "#5ea7bd",
+                            "val": 1.1
+                        }
+
+                    ],
+                    "size": 2.21,
+                    "color": "#064e64",
+                    "val": 50
+               },
+                {
+                    "name": "Tuberculosis",
+                    "size": 3.74,
+                    "color": "#064e64",
+                    "val": 50
+                },
+                {
+                    "name": "HIV and AIDS",
+                    "size": 3.92,
+                    "color": "#064e64",
+                    "val": 50
+                },
+                {
+                    "name": "Cardio diseases",
+                    "children": [
+                        {
+                            "name": "Cardiomyopathy and myocarditis",
+                            "size": 4.98,
+                            "color": "#5ea7bd",
+                            "val": 11.57
+                        },
+                        {
+                            "name": "Hypertensive heart disease",
+                            "size": 8.05,
+                            "color": "#5ea7bd",
+                            "val": 11.57
+                        },
+                        {
+                            "name": "Ischemic heart disease",
+                            "size": 76.58,
+                            "color": "#5ea7bd",
+                            "val": 11.57
+                        },
+                        {
+                            "name": "Other cardiovascular and circulatory diseases",
+                            "size": 7.24,
+                            "color": "#5ea7bd",
+                            "val": 11.57
+                        },
+                        {
+                            "name": "Rheumatic heart disease",
+                            "size": 3.15,
+                            "color": "#5ea7bd",
+                            "val": 11.57
+                        }
+
+                    ],
+                    "size": 23.51,
+                    "color": "#064e64",
+                    "val": 50
+                },
+                {
+                    "name": "Neuro disorders",
+                    "children": [
+                        {
+                            "name": "Alcohol use disorders",
+                            "size": 4.09,
+                            "color": "#5ea7bd",
+                            "val": 5.35
+                        },
+                        {
+                            "name": "Alzheimer's disease and other dementias",
+                            "size": 7.74,
+                            "color": "#5ea7bd",
+                            "val": 5.35
+                        },
+                        {
+                            "name": "Cocaine and drug use",
+                            "size": 2.16,
+                            "color": "#5ea7bd",
+                            "val": 5.35
+                        },
+                        {
+                            "name": "Eating disorders",
+                            "size": 0.14,
+                            "color": "#5ea7bd",
+                            "val": 5.35
+                        },
+                        {
+                            "name": "Epilepsy",
+                            "size": 4.47,
+                            "color": "#5ea7bd",
+                            "val": 5.35
+                        },
+                        {
+                            "name": "Ischemic stroke",
+                            "size": 56.66,
+                            "color": "#5ea7bd",
+                            "val": 5.35
+                        },
+                        {
+                            "name": "Neural tube defects",
+                            "size": 1.69,
+                            "color": "#5ea7bd",
+                            "val": 5.35
+                        },
+                        {
+                            "name": "Other mental and behavioral disorders",
+                            "size": 0.41,
+                            "color": "#5ea7bd",
+                            "val": 5.35
+                        },
+                        {
+                            "name": "Other neurological disorders",
+                            "size": 9.96,
+                            "color": "#5ea7bd",
+                            "val": 5.35
+                        },
+                        {
+                            "name": "Parkinson's disease",
+                            "size": 2.73,
+                            "color": "#5ea7bd",
+                            "val": 5.35
+                        },
+                        {
+                            "name": "Schizophrenia",
+                            "size": 0.50,
+                            "color": "#5ea7bd",
+                            "val": 5.35
+                        }
+
+
+                    ],
+                    "size": 10.67,
+                    "color": "#064e64",
+                    "val": 50
+                },
+                {
+                    "name": "Respiratory diseases",
+                    "children": [
+                        {
+                            "name": "Chronic obstructive pulmonary disease",
+                            "size": 56.16,
+                            "color": "#5ea7bd",
+                            "val": 7.10
+                        },
+                        {
+                            "name": "H influenzae type B pneumonia",
+                            "size": 7.00,
+                            "color": "#5ea7bd",
+                            "val": 7.10
+                        },
+                        {
+                            "name": "Influenza",
+                            "size": 8.93,
+                            "color": "#5ea7bd",
+                            "val": 7.10
+                        },
+                        {
+                            "name": "Other chronic respiratory diseases",
+                            "size": 5.43,
+                            "color": "#5ea7bd",
+                            "val": 7.10
+                        },
+                        {
+                            "name": "Pneumococcal meningitis",
+                            "size": 2.22,
+                            "color": "#5ea7bd",
+                            "val": 7.10
+                        },
+                        {
+                            "name": "Pneumococcal pneumonia",
+                            "size": 12.80,
+                            "color": "#5ea7bd",
+                            "val": 7.10
+                        },
+                        {
+                            "name": "Pneumoconiosis",
+                            "size": 2.94,
+                            "color": "#5ea7bd",
+                            "val": 7.10
+                        },
+                        {
+                            "name": "Respiratory syncytial virus pneumonia",
+                            "size": 4.52,
+                            "color": "#5ea7bd",
+                            "val": 7.10
+                        }
+
+                    ],
+                    "size": 14.20,
+                    "color": "#064e64",
+                    "val": 50
+                },
+                {
+                    "name": "NTD and malaria",
+                    "children": [
+                        {
+                            "name": "Chagas disease",
+                            "size": 0.96,
+                            "color": "#5ea7bd",
+                            "val": 1.71
+                        },
+                        {
+                            "name": "Cysticercosis",
+                            "size": 0.08,
+                            "color": "#5ea7bd",
+                            "val": 1.71
+                        },
+                        {
+                            "name": "Dengue",
+                            "size": 0.98,
+                            "color": "#5ea7bd",
+                            "val": 1.71
+                        },
+                        {
+                            "name": "Echinococcosis",
+                            "size": 0.08,
+                            "color": "#5ea7bd",
+                            "val": 1.71
+                        },
+                        {
+                            "name": "Leishmaniasis",
+                            "size": 5.04,
+                            "color": "#5ea7bd",
+                            "val": 1.71
+                        },
+                        {
+                            "name": "Malaria",
+                            "size": 89.32,
+                            "color": "#5ea7bd",
+                            "val": 1.71
+                        },
+                        {
+                            "name": "Rabies",
+                            "size": 2.13,
+                            "color": "#5ea7bd",
+                            "val": 1.71
+                        },
+                        {
+                            "name": "Schistosomiasis",
+                            "size": 0.72,
+                            "color": "#5ea7bd",
+                            "val": 1.71
+                        },
+                        {
+                            "name": "African trypanosomiasis",
+                            "size": 0.70,
+                            "color": "#5ea7bd",
+                            "val": 1.71
+                        }
+
+                    ],
+                    "size": 3.43,
+                    "color": "#064e64",
+                    "val": 50
+                },
+                {
+                    "name": "Diabetes",
+                    "children": [
+                        {
+                            "name": "Diabetes mellitus",
+                            "size": 87.30,
+                            "color": "#5ea7bd",
+                            "val": 1.63
+                        },
+                        {
+                            "name": "Chronic kidney disease",
+                            "size": 12.70,
+                            "color": "#5ea7bd",
+                            "val": 1.63
+                        }
+
+                    ],
+                    "size": 3.27,
+                    "color": "#064e64",
+                    "val": 50
+                },
+                {
+                    "name": "Diarrhea and other infectious",
+                    "children": [
+                        {
+                            "name": "Cholera",
+                            "size": 2.16,
+                            "color": "#5ea7bd",
+                            "val": 3.4
+                        },
+                        {
+                            "name": "Diphtheria",
+                            "size": 0.11,
+                            "color": "#5ea7bd",
+                            "val": 3.4
+                        },
+                        {
+                            "name": "Encephalitis",
+                            "size": 4.65,
+                            "color": "#5ea7bd",
+                            "val": 3.4
+                        },
+                        {
+                            "name": "Meningitis",
+                            "size": 3.19,
+                            "color": "#5ea7bd",
+                            "val": 3.4
+                        },
+                        {
+                            "name": "Measles",
+                            "size": 4.61,
+                            "color": "#5ea7bd",
+                            "val": 3.4
+                        },
+                        {
+                            "name": "Other diarrheal diseases",
+                            "size": 15.91,
+                            "color": "#5ea7bd",
+                            "val": 3.4
+                        },
+                        {
+                            "name": "Other infectious diseases",
+                            "size": 11.93,
+                            "color": "#5ea7bd",
+                            "val": 3.4
+                        },
+                        {
+                            "name": "Lower respiratory infections",
+                            "size": 35.32,
+                            "color": "#5ea7bd",
+                            "val": 3.4
+                        },
+                        {
+                            "name": "Other meningitis",
+                            "size": 5.68,
+                            "color": "#5ea7bd",
+                            "val": 3.4
+                        },
+                        {
+                            "name": "Otitis media",
+                            "size": 0.13,
+                            "color": "#5ea7bd",
+                            "val": 3.4
+                        },
+                        {
+                            "name": "Other salmonella infections",
+                            "size": 2.91,
+                            "color": "#5ea7bd",
+                            "val": 3.4
+                        },
+                        {
+                            "name": "Tetanus",
+                            "size": 2.32,
+                            "color": "#5ea7bd",
+                            "val": 3.4
+                        },
+                        {
+                            "name": "Typhoid and paratyphoid fevers",
+                            "size": 7.76,
+                            "color": "#5ea7bd",
+                            "val": 3.4
+                        },
+                        {
+                            "name": "Upper respiratory infections",
+                            "size": 0.11,
+                            "color": "#5ea7bd",
+                            "val": 3.4
+                        },
+                        {
+                            "name": "Varicella",
+                            "size": 0.24,
+                            "color": "#5ea7bd",
+                            "val": 3.4
+                        },
+                        {
+                            "name": "Whooping cough",
+                            "size": 2.99,
+                            "color": "#5ea7bd",
+                            "val": 3.4
+                        }
+
+
+                    ],
+                    "size": 6.81,
+                    "color": "#064e64",
+                    "val": 50
+                },
+                {
+                    "name": "Neonatal disorders",
+                    "children": [
+                        {
+                            "name": "Birth asphyxia and trauma",
+                            "size": 23.46,
+                            "color": "#5ea7bd",
+                            "val": 3.13
+                        },
+                        {
+                            "name": "Sepsis and other infectious",
+                            "size": 22.99,
+                            "color": "#5ea7bd",
+                            "val": 3.13
+                        },
+                        {
+                            "name": "Other disorders",
+                            "size": 15.69,
+                            "color": "#5ea7bd",
+                            "val": 3.13
+                        },
+                        {
+                            "name": "Preterm birth complications",
+                            "size": 37.86,
+                            "color": "#5ea7bd",
+                            "val": 3.13
+                        }
+
+                    ],
+                    "size": 6.26,
+                    "color": "#064e64",
+                    "val": 50
+                }
+
+
+
+            ],
+            "size": 100,
+            "val": 50
+        }
+
+
+
+
+    ]
+}
+
+
+ 

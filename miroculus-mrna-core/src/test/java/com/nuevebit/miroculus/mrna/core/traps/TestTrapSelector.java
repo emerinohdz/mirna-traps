@@ -48,7 +48,7 @@ public class TestTrapSelector {
         discoveries.add(new CorrelationDiscovery(
                 new MiRNA("hsa-miR-10"),
                 new Disease(5.1),
-                0));
+                1));
 
         discoveries.add(new CorrelationDiscovery(
                 new MiRNA("hsa-miR-106a"),
