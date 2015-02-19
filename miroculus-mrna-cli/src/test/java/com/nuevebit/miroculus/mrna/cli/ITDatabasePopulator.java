@@ -35,12 +35,6 @@ public class ITDatabasePopulator {
     @Test
     @Rollback(true)
     public void testPopulate() throws Exception {
-        String csv = IOUtils.toString(ITDatabasePopulator.class
-                .getResourceAsStream("/microRNAs.csv"));
-
-        InputStream mortalityRatesStream = ITDatabasePopulator.class
-                .getResourceAsStream("disease_mortality_rates.txt");
-
-        populator.populate(csv, mortalityRatesStream);
+        populator.populate();
     }
 }

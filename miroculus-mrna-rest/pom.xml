@@ -115,6 +115,14 @@
             <version>${project.version}</version>
         </dependency>
 
+        <!-- TODO: this should be on a different artifact, where persistence
+        specific code and configurations reside -->
+        <dependency>
+            <groupId>com.nuevebit.miroculus</groupId>
+            <artifactId>miroculus-mrna-cli</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
     </dependencies>
 
     <build>

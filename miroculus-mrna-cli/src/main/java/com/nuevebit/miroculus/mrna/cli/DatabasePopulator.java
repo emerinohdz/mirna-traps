@@ -58,17 +58,28 @@ public class DatabasePopulator {
     @Inject
     private PublicationRepository publicationRepository;
 
+    @Transactional(rollbackFor = Exception.class)
+    public void populate() throws IOException {
+        String csv = IOUtils.toString(DatabasePopulator.class
+                .getResourceAsStream("/microRNAs.csv"));
+
+        InputStream mortalityRatesStream = DatabasePopulator.class
+                .getResourceAsStream("/disease_mortality_rates.txt");
+
+        populate(csv, mortalityRatesStream);
+    }
+
     /**
      * Retrieve information from CSV and json files, and populate db with this
      * data.
-     * 
+     *
      * @param csv the CSV file as a string
      * @param mortalityRates a list of mortality rates separated by lines
      */
     @Transactional(rollbackFor = Exception.class)
-    public void populate(String csv, InputStream mortalityRates) 
+    public void populate(String csv, InputStream mortalityRates)
             throws IOException {
-        
+
         // populate the information in the CSV string
         parseCSV(csv);
 
@@ -77,9 +88,9 @@ public class DatabasePopulator {
         parseMortalityRates(mortalityRates);
     }
 
-    private void parseMortalityRates(InputStream mortalityRates) 
+    private void parseMortalityRates(InputStream mortalityRates)
             throws IOException {
-        
+
         List<String> lines = IOUtils.readLines(mortalityRates);
 
         for (String line : lines) {
