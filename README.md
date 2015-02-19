@@ -17,7 +17,7 @@ The created DB schema (MySQL) is located under:
 Only one manual dependency is needed, all other dependencies can be obtained
 directly from maven central repository.
 
-NueveBit Persistence Utilities -> 
+    NueveBit Persistence Utilities -> https://github.com/NueveBit/persistence-utils
 
 # Build and installation
 

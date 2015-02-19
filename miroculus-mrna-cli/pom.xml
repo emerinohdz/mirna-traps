@@ -4,9 +4,9 @@
     <parent>
         <groupId>com.nuevebit.miroculus</groupId>
         <artifactId>miroculus-mrna</artifactId>
-        <version>0.2-SNAPSHOT</version>
+        <version>0.1</version>
     </parent>
-    <artifactId>miraculus-mrna-cli</artifactId>
+    <artifactId>miroculus-mrna-cli</artifactId>
     <packaging>jar</packaging>
     <dependencies>
         <dependency>
@@ -66,4 +66,5 @@
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
     </properties>
+    <name>miroculus-mrna-cli</name>
 </project>
